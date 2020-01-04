@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "title": "Cocinar",
+        "description": "Cocinar papas al horno",
+        "priority": "Low",
+        "done": false
+    },
+    {
+        "id": 1,
+        "title": "No Olvidar",
+        "description": "Sacar a pasear al perro",
+        "priority": "Medium",
+        "done": false
+    },
+    {
+        "id": 2,
+        "title": "OJO",
+        "description": "Deje la cerveza en el congelador",
+        "priority": "Critical",
+        "done": true
+    }
+]

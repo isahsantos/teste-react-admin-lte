@@ -7,6 +7,11 @@ import Dashboard from './component/Dashboard';
 import Notas from './component/Notas';
 import Menu from './partials/Menu';
 
+import Note from './notas.json';
+
+const Notes = Note;
+console.log(Notes);
+
 function App() {
   return (
     <Router>
@@ -14,7 +19,7 @@ function App() {
       <Menu />
       <div className="content-wrapper px-4 py-2">
         <Switch>
-          <Route path="/home" component={Home}/>
+          <Route path="/" component={Home}/>
           <Route path="/dashboard" component={Dashboard}/>
           <Route path="/notas" component={Notas}/>
         </Switch>
