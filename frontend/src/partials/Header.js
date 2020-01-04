@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom'
 
 function Header() {
     return (
-        <div>
-        {/* Navbar */}
         <nav className="main-header navbar navbar-expand navbar-white navbar-light">
           {/* Left navbar links */}
           <ul className="navbar-nav">
@@ -27,8 +25,6 @@ function Header() {
             </li>
           </ul>
         </nav>
-        {/* /.navbar */}
-      </div>
     )
 }
 

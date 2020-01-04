@@ -12,11 +12,13 @@ function App() {
     <Router>
       <Header />
       <Menu />
-      <Switch>
-        <Route path="/home" component={Home}/>
-        <Route path="/dashboard" component={Dashboard}/>
-        <Route path="/notas" component={Notas}/>
-      </Switch>
+      <div className="content-wrapper px-4 py-2">
+        <Switch>
+          <Route path="/home" component={Home}/>
+          <Route path="/dashboard" component={Dashboard}/>
+          <Route path="/notas" component={Notas}/>
+        </Switch>
+      </div>
       <Footer />
     </Router>
   );
