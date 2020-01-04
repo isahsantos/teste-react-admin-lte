@@ -1,8 +1,17 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Header from './partials/Header';
+import Footer from './partials/Footer';
 
 function App() {
   return (
-    <h1>Admin LTE3 con React!</h1>
+    <Router>
+      <Header />
+      <Switch>
+        <Route></Route>
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 
