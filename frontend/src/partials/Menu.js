@@ -34,11 +34,6 @@ function Menu() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/dashboard">
-                            <i className="nav-icon fas fa-th" /><p>Dashboard</p>
-                        </Link>
-                    </li>
-                    <li className="nav-item">
                         <Link className="nav-link" to="/notas">
                             <i className="nav-icon fas fa-th" /><p>Notas</p>
                         </Link>

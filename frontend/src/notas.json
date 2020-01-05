@@ -3,14 +3,14 @@
         "id": 0,
         "title": "Cocinar",
         "description": "Cocinar papas al horno",
-        "priority": "Low",
+        "priority": "Normal",
         "done": false
     },
     {
         "id": 1,
         "title": "No Olvidar",
         "description": "Sacar a pasear al perro",
-        "priority": "Medium",
+        "priority": "Normal",
         "done": false
     },
     {

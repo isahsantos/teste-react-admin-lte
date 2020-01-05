@@ -3,14 +3,13 @@ import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Header from './partials/Header';
 import Footer from './partials/Footer';
 import Home from './component/Home';
-import Dashboard from './component/Dashboard';
 import Notas from './component/Notas';
 import Menu from './partials/Menu';
 
 import Note from './notas.json';
 
-const Notes = Note;
-console.log(Notes);
+
+console.log(Note);
 
 function App() {
   return (
@@ -19,8 +18,8 @@ function App() {
       <Menu />
       <div className="content-wrapper px-4 py-2">
         <Switch>
-          <Route path="/" component={Home}/>
-          <Route path="/dashboard" component={Dashboard}/>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/home" component={Home}/>
           <Route path="/notas" component={Notas}/>
         </Switch>
       </div>
