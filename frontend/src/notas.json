@@ -4,6 +4,7 @@
         "title": "Cocinar",
         "description": "Cocinar papas al horno",
         "priority": "Normal",
+        "created_at": "31/12/2020",
         "done": false
     },
     {
@@ -11,6 +12,7 @@
         "title": "No Olvidar",
         "description": "Sacar a pasear al perro",
         "priority": "Normal",
+        "created_at": "31/12/2020",
         "done": false
     },
     {
@@ -18,12 +20,21 @@
         "title": "OJO",
         "description": "Deje la cerveza en el congelador",
         "priority": "Critical",
+        "created_at": "31/12/2020",
         "done": true
     },{
         "id": 3,
         "title": "Playa",
         "description": "Llevar proyector",
         "priority": "Critical",
+        "created_at": "31/12/2020",
+        "done": true
+    },{
+        "id": 4,
+        "title": "Futbol",
+        "description": "Ir a la cancha",
+        "priority": "Normal",
+        "created_at": "31/12/2020",
         "done": true
     }
 ]

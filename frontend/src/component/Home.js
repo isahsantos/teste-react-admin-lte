@@ -1,4 +1,9 @@
 import React from 'react'
+import TableNotas from './TableNotas'
+
+
+
+
 
 function Home({citas}) {
 
@@ -52,36 +57,16 @@ function Home({citas}) {
                     </div>
                 </div>
             </div>
+            
             <div className="col-12">
                 <div className="card">
                     <div className="card-header border-0">
                         <h3 className="card-title">Notas</h3>
                     </div>
-                    <div className="card-body p-0">
-                        <table className="table table-striped table-valign-middle">
-                            <thead>
-                                <tr>
-                                    <th>Titulo</th>
-                                    <th>Prioridad</th>
-                                    <th>Fecha</th>
-                                    <th>Accion</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Some Product</td>
-                                    <td><span className="badge bg-danger">Critical</span></td>
-                                    <td>Some Product</td>
-                                    <td>Some Product</td>
-                                </tr>
-                                <tr>
-                                    <td>Some Product</td>
-                                    <td><span className="badge bg-yellow">Normal</span></td>
-                                    <td>Some Product</td>
-                                    <td>Some Product</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div className="card-body p-1">
+                        <TableNotas
+                            citas= {citas}
+                        />
                     </div>
                 </div>
             </div>
