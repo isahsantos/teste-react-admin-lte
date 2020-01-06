@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Header from './partials/Header';
 import Footer from './partials/Footer';
@@ -9,17 +9,23 @@ import Menu from './partials/Menu';
 import Note from './notas.json';
 
 
-console.log(Note);
-
 function App() {
+
+  const [citas,guardarCitas] = useState(Note)
+
+  
   return (
     <Router>
       <Header />
       <Menu />
       <div className="content-wrapper px-4 py-2">
         <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route exact path="/home" component={Home}/>
+          <Route exact path="/" 
+          render = { () => (
+            <Home 
+              citas = {citas}
+            />
+          )}/>
           <Route path="/notas" component={Notas}/>
         </Switch>
       </div>

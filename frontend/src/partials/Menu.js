@@ -29,7 +29,7 @@ function Menu() {
                     {/* Add icons to the links using the .nav-icon class
                         with font-awesome or any other icon font library */}
                     <li className="nav-item">
-                        <Link className="nav-link" to="/home">
+                        <Link className="nav-link" to="/">
                             <i className="nav-icon fas fa-th" /><p>Home</p>
                         </Link>
                     </li>

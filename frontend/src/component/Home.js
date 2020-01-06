@@ -1,6 +1,19 @@
 import React from 'react'
 
-function Home() {
+function Home({citas}) {
+
+    const citasCerradas = citas.filter( cita =>{
+        return cita.done === true
+    })
+
+    const citasCriticas = citas.filter( cita =>{
+        return cita.priority === "Critical"
+    })
+
+    const citasNormal = citas.filter( cita =>{
+        return cita.priority === "Normal"
+    })
+    
     return (
         <div className="row">
             <div className="col-12 col-sm-6 col-md-3">
@@ -8,7 +21,7 @@ function Home() {
                     <span className="info-box-icon bg-info elevation-1"><i className="fas fa-cog" /></span>
                     <div className="info-box-content">
                         <span className="info-box-text">Cantidad Notas</span>
-                        <span className="info-box-number">1<small>%</small></span>
+                        <span className="info-box-number">{citas.length} <small>citas</small></span>
                     </div>
                 </div>
             </div>
@@ -17,7 +30,7 @@ function Home() {
                     <span className="info-box-icon bg-green elevation-1"><i className="fas fa-cog" /></span>
                     <div className="info-box-content">
                         <span className="info-box-text">Notas cerradas</span>
-                        <span className="info-box-number">2<small>%</small></span>
+                        <span className="info-box-number">{citasCerradas.length} <small>citas</small></span>
                     </div>
                 </div>
             </div>
@@ -26,7 +39,7 @@ function Home() {
                     <span className="info-box-icon bg-danger elevation-1"><i className="fas fa-cog" /></span>
                     <div className="info-box-content">
                         <span className="info-box-text">Notas criticas</span>
-                        <span className="info-box-number">1<small>%</small></span>
+                        <span className="info-box-number">{citasCriticas.length} <small>citas</small></span>
                     </div>
                 </div>
             </div>
@@ -35,7 +48,7 @@ function Home() {
                     <span className="info-box-icon bg-yellow elevation-1"><i className="fas fa-cog" /></span>
                     <div className="info-box-content">
                         <span className="info-box-text">Notas normales</span>
-                        <span className="info-box-number">2<small>%</small></span>
+                        <span className="info-box-number">{citasNormal.length} <small>citas</small></span>
                     </div>
                 </div>
             </div>
