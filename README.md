@@ -1,6 +1,6 @@
 💻️
 
-This project of continuity to a previous one but graphics with the higchart library were inserted, this is part of a research to find a suitable monitoring dashboard for a professional project
+This project is to continuity this repository https://github.com/LSequeiraWeb/adminLTE-React  but graphics with the higchart library were inserted, this is part of a research to find a suitable monitoring dashboard for a professional project
 
 ## Available Scripts
 
