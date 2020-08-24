@@ -1,24 +1,23 @@
 import React from 'react'
 import TableNotas from './TableNotas'
+import Charts from './Charts'
 
 
 
+function Home({ citas }) {
 
-
-function Home({citas}) {
-
-    const citasCerradas = citas.filter( cita =>{
+    const citasCerradas = citas.filter(cita => {
         return cita.done === true
     })
 
-    const citasCriticas = citas.filter( cita =>{
+    const citasCriticas = citas.filter(cita => {
         return cita.priority === "Critical"
     })
 
-    const citasNormal = citas.filter( cita =>{
+    const citasNormal = citas.filter(cita => {
         return cita.priority === "Normal"
     })
-    
+
     return (
         <div className="row">
             <div className="col-12 col-sm-6 col-md-3">
@@ -57,7 +56,7 @@ function Home({citas}) {
                     </div>
                 </div>
             </div>
-            
+
             <div className="col-12">
                 <div className="card">
                     <div className="card-header border-0">
@@ -65,8 +64,21 @@ function Home({citas}) {
                     </div>
                     <div className="card-body p-1">
                         <TableNotas
-                            citas= {citas}
+                            citas={citas}
                         />
+                    </div>
+                </div>
+            </div>
+            <div className="col-12">
+                <div className="card">
+                    <div className="card-header border-0">
+                        <h3 className="card-title">High chart 3 </h3>
+                    </div>
+                    <div className="card-body p-1">
+
+                        <Charts>
+
+                        </Charts>
                     </div>
                 </div>
             </div>
